@@ -5,7 +5,7 @@ import ListContainer from './ListContainer';
 
 export default function App() {
   return (
-    <View>
+    <View style = { styles.container }>
       <ListContainer />
     </View>
   );

@@ -12,8 +12,8 @@ function filterAndSort(text, asc) {
         .filter(i => text.length === 0 || i.includes(text))
         .sort(
             asc
-                ? (a, b) => (a > b ? 1 : 0) 
-                : (a, b) => (b > a ? 1 : 0)
+                ? (a, b) => (a > b ? 1 : a < b ? -1 : 0) 
+                : (a, b) => (b > a ? 1 : b < a ? -1 : 0)
         );
 }
 
